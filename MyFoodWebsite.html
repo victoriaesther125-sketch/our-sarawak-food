@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dapur Kamek</title>
+
+    <!-- jQuery Mobile CSS CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!-- jQuery & jQuery Mobile JS CDN -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        /* Center main hero image */
+        .product-img {
+            width: 50%;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* 2-column card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* Card styling */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #b33;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+        <h1>Dapur Kamek</h1>
+    </div>
+
+    <!-- NAVBAR -->
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <h2>Welcome to our Dapur Kamek!</h2>
+        <p>We offer freshly baked cakes</p>
+        <h3>Featured Items</h3>
+
+        <!-- Responsive Card Grid -->
+        <div class="card-grid">
+            <div class="card">
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\ayam pansuh.jpg" alt="Ayam Pansuh">
+                <h3>Ayam Pansuh</h3>
+                <p>Tender chicken cooked with traditional herbs and spices inside a bamboo tube, giving it a unique, smoky, and aromatic flavour.</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\laksa sarawak.jpg" alt="Laksa Sarawak">
+                <h3>Laksa Sarawak</h3>
+                <p>A delicious bowl of spicy and creamy noodle soup with rich Sarawak spices, topped with chicken, prawns, egg, and fresh vegetables.</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\umai.jpg" alt="Umai">
+                <h3>Umai Sarawak</h3>
+                <p>A fresh and tasty traditional Sarawak dish made with raw fish, mixed with lime juice, onions, chilli, and herbs for a refreshing and slightly spicy taste.</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\kuih muih sarawak.jpg" alt="Kuih-Muih">
+                <h3>Kuih-Muih Sarawak</h3>
+                <p>A variety of colourful and delicious traditional Sarawak snacks with different sweet and soft flavours, perfect for enjoying with tea or coffee.</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">©️ 2016 Dapur Kamek</h4>
+    </div>
+</div>
+
+<!-- PRODUCTS PAGE -->
+<div data-role="page" id="products">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext"></a>
+        <h1>Our Products</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products" class="ui-btn-active">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\ayam pansuh.jpg" alt="Food">
+                <h2>Ayam Pansuh</h2>
+                <p>Enjoy tender chicken cooked in bamboo with traditional Sarawak flavours.</p>
+            </li>
+            
+            <li>
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\laksa sarawak.jpg" alt="Noodles">
+                <h2>Laksa Sarawak</h2>
+                <p>Savour the rich and aromatic Sarawak Laksa, filled with authentic local flavours.</p>
+            </li>
+
+            <li>
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\umai.jpg" alt="Food">
+                <h2>Umai Sarawak</h2>
+                <p>Taste the freshness of Sarawak-style raw fish mixed with fresh lime and local ingredients</p>
+            </li>
+
+            <li>
+                <img src="C:\Users\User\OneDrive\WEB DESIGN\makanan sarawak\kuih muih sarawak.jpg" alt="Dessert">
+                <h2>Kuih-Muih Sarawak</h2>
+                <p>Discover a variety of delicious traditional Sarawak kuih, perfect for a sweet treat.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">©️ 2026 Dapur Kamek</h4>
+    </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext"></a>
+        <h1>Contact Us</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+        </ul>
+    </div>
+
+
+    
+    <div class="contact-container">
+    <form id="contactForm">
+        <h2>Contact Us</h2>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear</button>
+
+        <input type="submit" value="Send Message" data-theme="b">
+    </form>
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevents the form from submitting and causing the page error
+        alert("Message sent successfully!");
+    });
+</script>
+
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">©️ 2026 Dapur Kamek</h4>
+    </div>
+</div>
+
+</body>
+</html>
